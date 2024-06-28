@@ -117,7 +117,8 @@ def validate_email_format(email: str) -> bool:
     if email.endswith("@localhost"):
         return True
 
-    return bool(re.match(r"[^@]+@[^@]+\.[^@]+", email))
+    return bool(re.match("[^@]+@hkcloud.co.kr", email))
+    # return bool(re.match(r"[^@]+@[^@]+\.[^@]+", email))
 
 
 def sanitize_filename(file_name):
