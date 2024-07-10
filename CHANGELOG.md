@@ -5,6 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.8] - 2024-07-09
+
+### Added
+
+- **💬 Chat Controls**: Easily adjust parameters for each chat session, offering more precise control over your interactions.
+- **📌 Pinned Chats**: Support for pinned chats, allowing you to keep important conversations easily accessible.
+- **📄 Apache Tika Integration**: Added support for using Apache Tika as a document loader, enhancing document processing capabilities.
+- **🛠️ Custom Environment for OpenID Claims**: Allows setting custom claims for OpenID, providing more flexibility in user authentication.
+- **🔧 Enhanced Tools & Functions API**: Introduced 'event_emitter' and 'event_call', now you can also add citations for better documentation and tracking. Detailed documentation will be provided on our documentation website.
+- **↔️ Sideways Scrolling in Settings**: Settings tabs container now supports horizontal scrolling for easier navigation.
+- **🌑 Darker OLED Theme**: Includes a new, darker OLED theme and improved styling for the light theme, enhancing visual appeal.
+- **🌐 Language Updates**: Updated translations for Indonesian, German, French, and Catalan languages, expanding accessibility.
+
+### Fixed
+
+- **⏰ OpenAI Streaming Timeout**: Resolved issues with OpenAI streaming response using the 'AIOHTTP_CLIENT_TIMEOUT' setting, ensuring reliable performance.
+- **💡 User Valves**: Fixed malfunctioning user valves, ensuring proper functionality.
+- **🔄 Collapsible Components**: Addressed issues with collapsible components not working, restoring expected behavior.
+
+### Changed
+
+- **🗃️ Database Backend**: Switched from Peewee to SQLAlchemy for improved concurrency support, enhancing database performance.
+- **🔤 Primary Font Styling**: Updated primary font to Archivo for better visual consistency.
+- **🔄 Font Change for Windows**: Replaced Arimo with Inter font for Windows users, improving readability.
+- **🚀 Lazy Loading**: Implemented lazy loading for 'faster_whisper' and 'sentence_transformers' to reduce startup memory usage.
+- **📋 Task Generation Payload**: Task generations now include only the "task" field in the body instead of "title".
 
 ## [0.3.7] - 2024-06-29
 
